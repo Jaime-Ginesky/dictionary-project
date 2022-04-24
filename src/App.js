@@ -8,6 +8,7 @@ function App() {
       <header className="App-header">
       </header>
       <main>
+        <h1>Dictionary</h1>
         <Search />
       </main>
       <footer className="text-center">

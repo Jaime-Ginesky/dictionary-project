@@ -1,0 +1,24 @@
+body {
+  font-family: 'Nixie One', cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color:darkkhaki;
+  font-weight: bold;
+  padding: 30px;
+}
+
+p {
+  text-align: left;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+h2, h3, h4 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px;
+  color:darkkhaki;
+}
