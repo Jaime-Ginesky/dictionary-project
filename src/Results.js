@@ -13,7 +13,7 @@ export default function Results(props) {
             </div>
             );
         })}
-    </div>
+        </div>
 } else { 
     return null;
  }
