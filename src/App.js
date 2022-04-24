@@ -12,7 +12,14 @@ function App() {
         <Search />
       </main>
       <footer className="text-center">
-        <small>Coded by Jaime Ginesky</small>
+        <small>Coded by {" "} 
+        <a href="https://naughty-herman-ab01e.netlify.app/" 
+           target="blank"
+           rel="noreferrer">Jaime Ginesky{" "}</a>{" "} and is {" "}
+        <a href="https://github.com/Jaime-Ginesky/dictionary-project" 
+          target="blank"
+          rel="noreferrer">open-sourced on Git Hub.</a>
+        </small>
       </footer>
     </div>
   </div>
