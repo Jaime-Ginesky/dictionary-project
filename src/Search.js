@@ -3,18 +3,22 @@ import "./Search.css";
 import Results from "./Results";
 import axios from "axios";
 
-export default function Search() {
-    let [keyword, setKeyword] = useState("");
+export default function Search(props) {
+    let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults] = useState(null);
+    let [loaded, setLoaded] = useState(false);
 
     function handleResponse(response) {
         setResults(response.data[0]);
     }
-
-    function searchAlert(event) {
-        event.preventDefault();
+    function searchAlert() {
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiUrl).then(handleResponse);
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        searchAlert();
     }
 
 
@@ -22,13 +26,26 @@ export default function Search() {
         setKeyword(event.target.value);
     }
 
-    return (
-        <div className="Search">
-           <form onSubmit={searchAlert}>
-            <input type="search" placeholder="Enter any word..." className= "form-elements" onChange={handlekeywordChange} />
-           </form>
-           <Results results={results} />
-        </div>
+    function load() {
+        setLoaded(true);
+        searchAlert();
+    }
 
-    )
-}
+        if(loaded) {
+            return (
+                <div className="Search">
+                  <section>
+                      <h1>Enter a word to look up.</h1>
+                   <form onSubmit={handleSubmit}>
+                    <input type="search" className= "form-elements" onChange={handlekeywordChange} 
+                    defaultValue={props.defaultKeyword} />
+                   </form>
+                   </section>
+                   <Results results={results} />
+                </div>
+           );
+        }else{
+            load();
+            return"Loading";
+             }
+       }

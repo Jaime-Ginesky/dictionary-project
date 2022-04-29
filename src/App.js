@@ -9,7 +9,7 @@ function App() {
       </header>
       <main>
         <h1>Dictionary</h1>
-        <Search />
+        <Search defaultKeyword="dictionary" />
       </main>
       <footer className="text-center">
         <small>Coded by {" "} 

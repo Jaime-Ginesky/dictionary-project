@@ -3,3 +3,8 @@
     font-size: 10px;
     font-weight: bold;
 }
+
+.Meaning .example {
+    opacity: 0.7;
+    font-style: italic;
+}
