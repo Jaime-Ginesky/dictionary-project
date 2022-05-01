@@ -4,7 +4,7 @@ import Search from "./Search.js";
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="container-xxl">
       <header className="App-header">
       </header>
       <main>
