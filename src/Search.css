@@ -1,8 +1,23 @@
 
+.Search h1 {
+    text-align:left;
+    font-size: 15px;
+    padding: 20px 0 20px 0;
+    }
+
+.Search section {
+    background-color:khaki;
+    padding: 20px;
+    border-radius: 10px 50px;
+    box-shadow: 8px 8px 6px #afaaaa;
+}
+.Search p {
+    font-size: 8px;
+}
 
 .Search .form-elements {
     color:darkkhaki;
-    text-align: center;
+    text-align: left;
     font-size: 20x;
     font-weight: bold;
     border: 2px solid;

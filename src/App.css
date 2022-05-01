@@ -1,6 +1,7 @@
 body {
   font-family: 'Nixie One', cursive;
-  max-width: 800px;
+  max-width: 1000px;
+  background-color:floralwhite;
 }
 
 h1 {

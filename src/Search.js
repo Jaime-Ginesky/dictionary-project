@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "./Search.css";
 import Results from "./Results";
 import axios from "axios";
+
+import "./Search.css";
 
 export default function Search(props) {
     let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -40,9 +41,10 @@ export default function Search(props) {
                     <input type="search" className= "form-elements" onChange={handlekeywordChange} 
                     defaultValue={props.defaultKeyword} />
                    </form>
+                   <p>Suggested words: plane, book, coffee, swimming, etc.</p>
                    </section>
                    <Results results={results} />
-                </div>
+                   </div>
            );
         }else{
             load();
