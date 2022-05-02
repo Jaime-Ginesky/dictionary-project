@@ -1,7 +1,7 @@
 body {
   font-family: 'Nixie One', cursive;
   max-width: 960px;
-  background-color:floralwhite;
+  background-color:beige;
   margin: 0 auto;
 }
 
@@ -28,10 +28,12 @@ h2, h3, h4 {
 }
 
 footer {
-  font-size: 11px;
+  font-size: 14px;
   color: darkkhaki;
+  padding: 8px;
 }
 
 footer a {
   color:olivedrab;
 }
+

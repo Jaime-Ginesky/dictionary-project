@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import "./Search.css";
 import Results from "./Results";
 import axios from "axios";
 import Hits from "./Hits";
 
-import "./Search.css";
+
 
 export default function Search(props) {
     let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -44,23 +45,23 @@ export default function Search(props) {
         searchAlert();
     }
 
-        if(loaded) {
-            return (
-                <div className="Search">
-                  <section>
-                      <h1>Enter a word to look up.</h1>
-                   <form onSubmit={handleSubmit}>
-                    <input type="search" className= "form-elements" onChange={handlekeywordChange} 
-                    defaultValue={props.defaultKeyword} />
-                   </form>
-                   <p>Suggested words: plane, book, coffee, swimming, etc.</p>
-                   </section>
-                   <Results results={results} />
-                   <Hits hits={hits} />
-                   </div>
-           );
-        }else{
-            load();
-            return"Loading";
-             }
-       }
+    if(loaded) {
+        return (
+            <div className="Search">
+              <section>
+                  <h1>Enter a word to look up.</h1>
+               <form onSubmit={handleSubmit}>
+                <input type="search" className= "form-elements" onChange={handlekeywordChange} 
+                defaultValue={props.defaultKeyword} />
+               </form>
+               <p>Suggested words: plane, book, coffee, swimming, etc.</p>
+               </section>
+               <Results results={results} />
+               <Hits hits={hits} />
+               </div>
+       );
+    }else{
+        load();
+        return"Loading";
+         }
+   }

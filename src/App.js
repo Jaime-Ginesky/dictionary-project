@@ -1,5 +1,6 @@
-import './App.css';
 import Search from "./Search.js";
+
+import "./App.css";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       </main>
       <footer className="text-center">
         <small>Coded by {" "} 
-        <a href="https://naughty-herman-ab01e.netlify.app/" 
+        <a href="https://naughty-hermann-a4b01e.netlify.app/" 
            target="blank"
            rel="noreferrer">Jaime Ginesky{" "}</a>{" "} and is {" "}
         <a href="https://github.com/Jaime-Ginesky/dictionary-project" 
