@@ -5,17 +5,23 @@ import "./Phonetic.css";
 
 
 
+
 export default function Phonetic(props) {
-    let audio = new Audio(props.phonetic.audio);
+     console.log(props.results);
+     let audio = new Audio(props.phonetic.audio);    
 
-    function start() {
-        audio.play();
-    }
+     function start() {
+        audio.play();    
+        }
 
-    return (
+       
+        return (
   <div className="Phonetic">
       <FontAwesomeIcon icon= {faVolumeHigh} color="darkkhaki" onClick={start} />{"  "} 
       {props.phonetic.text}
   </div>
     );
 }
+
+
+

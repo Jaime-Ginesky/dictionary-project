@@ -17,7 +17,6 @@ export default function Search(props) {
     }
 
     function handlePixabayResponse(response) {
-        console.log(response);
         setHits(response.data.hits);
     }
 
