@@ -5,7 +5,7 @@ import "./Hits.css";
 export default function Hits(props) {
     if(props.hits) {
     return (
-    <section className="Hits">
+    <section>
         <div className="row">
         {props.hits.map(function(hit, index) {
             return (

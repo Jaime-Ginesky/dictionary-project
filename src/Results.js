@@ -5,14 +5,21 @@ import Phonetic from "./Phonetic";
 import "./Results.css";
 
 export default function Results(props) {
+    console.log(props.results);
    if (props.results){
     return (
     <div className="Results">
         <section>
         <h2>{props.results.word}</h2>
-        <div>
-           <Phonetic phonetic={props.results.phonetics[0]} />  
-           </div>
+           <div>
+               {props.results.phonetics.filter(
+               function(phonetic){
+               return phonetic.audio;
+           }).map(function(phonetic) {
+               return (
+               <Phonetic phonetic={phonetic} />
+               )})}
+            </div>
         </section>
         {props.results.meanings.map(function(meaning, index) {
             return (

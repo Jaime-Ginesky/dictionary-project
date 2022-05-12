@@ -1,11 +1,11 @@
 img {
-    padding:10px;
-    border-radius: 20px;
+    padding:25px;
+    border-radius: 30px;
 }
 
-section .Hits {
+section {
     border-radius: 10px 50px;
-    background-color: lightcyan;
+    background-color:rgb(131, 145, 126)
 }
 
 
