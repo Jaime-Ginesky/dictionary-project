@@ -37,3 +37,7 @@ footer a {
   color:olivedrab;
 }
 
+footer a:hover {
+  color:rgba(143, 112, 0, 0.902);
+}
+
