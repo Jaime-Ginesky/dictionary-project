@@ -1,8 +1,14 @@
 img {
-    padding:40px;
+    margin: 20px 30px;
+    width: 225px;
 }
+img .img-fluid {
+    border: 8px;
+    }
+
 .grow img {
     transition:1s ease;
+    border-radius: 10px;
 } 
 
 .grow img:hover {
@@ -14,7 +20,8 @@ img {
 
 section {
     border-radius: 10px 50px;
-    background-color:rgb(131, 145, 126)
+    background-color:rgb(131, 145, 126);
+    box-shadow: 8px 8px 6px #afaaaa;
 }
 
 
