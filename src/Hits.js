@@ -12,7 +12,8 @@ export default function Hits(props) {
             <div className="col-4" key={index}>
                 <a href={hit[0]} target="_blank" rel="noreferrer">
                 <div className="grow">
-            <img src={hit.largeImageURL} alt=" " className="img-fluid"/></div>
+            <img src={hit.largeImageURL} alt=" " className="img-fluid"/>
+               </div>
             </a>
             </div>
             );
