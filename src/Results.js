@@ -12,6 +12,7 @@ export default function Results(props) {
         <section>
         <h2>{props.results.word}</h2>
            <div>
+           {/*  Filters out alternate phonetic examples  */}
                {props.results.phonetics.filter(
                function(phonetic){
                return phonetic.audio;

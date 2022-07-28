@@ -51,7 +51,7 @@ export default function Search(props) {
                   <h1>Enter a word to look up.</h1>
                <form onSubmit={handleSubmit}>
                 <input type="search" className= "form-elements" onChange={handlekeywordChange} 
-                defaultValue={props.defaultKeyword} />
+                 />
                </form>
                <p>Suggested words: plane, book, coffee, swimming, etc.</p>
                </section>
